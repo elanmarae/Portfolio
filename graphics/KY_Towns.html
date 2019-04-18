@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<!-- saved from url=(0114)file:///C:/Users/elanm/Documents/University%20of%20Kentucky/MAP%20672/map672-module-02-elanmarae/lab-02/index.html -->
+<html><!-- Use the HTML and CSS you developed in module 01 to fill out this template.--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Three Kentucky Towns in my Family's History</title>
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+  <link rel="icon" href="https://newmapsplus.github.io/favicon.ico" type="image/x-icon">
+
+  <!-- Add links to external css stylesheets. -->
+  <link rel="stylesheet" href="./KY_Towns_files/normalize.css">
+  <link rel="stylesheet" href="./KY_Towns_files/leaflet.css">
+  <link href="./KY_Towns_files/css" rel="stylesheet">
+  <link href="./KY_Towns_files/css(1)" rel="stylesheet">
+
+  <style>
+    /* Add custom styles. */
+    <style>body {
+      margin: 30px;
+      padding: 0;
+      background: #e3e3e6;
+      font-family: 'Merriweather', serif;
+      font-weight: 300;
+      color: #3d3d3d;
+      font-size: 100%;
+    }
+    header,
+    section,
+    footer {
+      width: 80%;
+      margin: 10px auto;
+    }
+    h1 {
+      font-size: 1.75em;
+      font-family: 'Merriweather', serif;
+      color: #005daa;
+      font-weight: 900i;
+      letter-spacing: .04em;
+    }
+    h2 {
+      font-size: 1.5em;
+      font-weight: 300;
+      letter-spacing: .04em;
+    }
+    p {
+      font-size: 1.1em;
+      line-height: 1.5em;
+    }
+    a {
+      color: #99004C;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+      color: #0000CC;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      margin: 10px 0;
+    }
+    #map {
+      width: 100%;
+      height: 540px;
+      margin: 10px auto;
+      border: 2px solid #d3d3d3;
+    }
+    .highlight {
+      color: #f05716;
+      font-weight: bold;
+    }
+    .img-fill {
+      width: 100%;
+      height: auto;
+      margin: 10px 0;
+    }
+    .first-column {
+      float: left;
+      width: 49%;
+      padding-right: 2%;
+    }
+    .second-column {
+      float: left;
+      width: 49%;
+    }
+    .row::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+    @media screen and (max-width: 900px) {
+      .first-column,
+      .second-column {
+        width: 100%;
+      }
+    }
+    hr {
+      margin: 20px 0;
+      border: 0;
+      height: 1px;
+      background: #d3d3d3;
+    }
+    .caption {
+      margin: 0 0 20px 0;
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <!-- Add header information -->
+      <h1>Three Kentucky Towns in my Family's History</h1>
+  </header>
+
+  <section>
+    <!-- Add map and body content -->
+    <div id="map" class="leaflet-container leaflet-touch leaflet-retina leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom" tabindex="0" style="position: relative;"><div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(0px, 0px, 0px);"><div class="leaflet-pane leaflet-tile-pane"><div class="leaflet-layer " style="z-index: 1; opacity: 1;"><div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 16; transform: translate3d(0px, 0px, 0px) scale(1);"><img alt="" role="presentation" src="./KY_Towns_files/98.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(509px, 172px, 0px); opacity: 1;"><img alt="" role="presentation" src="./KY_Towns_files/97.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(509px, -84px, 0px); opacity: 1;"><img alt="" role="presentation" src="./KY_Towns_files/98(1).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(253px, 172px, 0px); opacity: 1;"><img alt="" role="presentation" src="./KY_Towns_files/98(2).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(765px, 172px, 0px); opacity: 1;"><img alt="" role="presentation" src="./KY_Towns_files/99.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(509px, 428px, 0px); opacity: 1;"><img alt="" role="presentation" src="./KY_Towns_files/97(1).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(253px, -84px, 0px); opacity: 1;"><img alt="" role="presentation" src="./KY_Towns_files/97(2).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(765px, -84px, 0px); opacity: 1;"><img alt="" role="presentation" src="./KY_Towns_files/99(1).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(253px, 428px, 0px); opacity: 1;"><img alt="" role="presentation" src="./KY_Towns_files/99(2).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(765px, 428px, 0px); opacity: 1;"><img alt="" role="presentation" src="./KY_Towns_files/98(3).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-3px, 172px, 0px); opacity: 1;"><img alt="" role="presentation" src="./KY_Towns_files/98(4).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1021px, 172px, 0px); opacity: 1;"><img alt="" role="presentation" src="./KY_Towns_files/97(3).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-3px, -84px, 0px); opacity: 1;"><img alt="" role="presentation" src="./KY_Towns_files/97(4).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1021px, -84px, 0px); opacity: 1;"><img alt="" role="presentation" src="./KY_Towns_files/99(3).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-3px, 428px, 0px); opacity: 1;"><img alt="" role="presentation" src="./KY_Towns_files/99(4).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1021px, 428px, 0px); opacity: 1;"></div></div></div><div class="leaflet-pane leaflet-shadow-pane"><img src="./KY_Towns_files/marker-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt="" style="margin-left: -12px; margin-top: -41px; width: 41px; height: 41px; transform: translate3d(487px, 356px, 0px);"><img src="./KY_Towns_files/marker-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt="" style="margin-left: -12px; margin-top: -41px; width: 41px; height: 41px; transform: translate3d(663px, 282px, 0px);"><img src="./KY_Towns_files/marker-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt="" style="margin-left: -12px; margin-top: -41px; width: 41px; height: 41px; transform: translate3d(624px, 214px, 0px);"></div><div class="leaflet-pane leaflet-overlay-pane"></div><div class="leaflet-pane leaflet-marker-pane"><img src="./KY_Towns_files/marker-icon-2x.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="" tabindex="0" style="margin-left: -12px; margin-top: -41px; width: 25px; height: 41px; transform: translate3d(487px, 356px, 0px); z-index: 356; outline: none;"><img src="./KY_Towns_files/marker-icon-2x.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="" tabindex="0" style="margin-left: -12px; margin-top: -41px; width: 25px; height: 41px; transform: translate3d(663px, 282px, 0px); z-index: 282;"><img src="./KY_Towns_files/marker-icon-2x.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="" tabindex="0" style="margin-left: -12px; margin-top: -41px; width: 25px; height: 41px; transform: translate3d(624px, 214px, 0px); z-index: 214;"></div><div class="leaflet-pane leaflet-tooltip-pane"></div><div class="leaflet-pane leaflet-popup-pane"><div class="leaflet-popup  leaflet-zoom-animated" style="opacity: 1; transform: translate3d(488px, 322px, 0px); bottom: -7px; left: -75px;"><div class="leaflet-popup-content-wrapper"><div class="leaflet-popup-content" style="width: 109px;"><b>Lexington</b><br><b>population</b>: 308428</div></div><div class="leaflet-popup-tip-container"><div class="leaflet-popup-tip"></div></div><a class="leaflet-popup-close-button" href="file:///C:/Users/elanm/Documents/University%20of%20Kentucky/MAP%20672/map672-module-02-elanmarae/lab-02/index.html#close">×</a></div></div><div class="leaflet-proxy leaflet-zoom-animated"></div></div><div class="leaflet-control-container"><div class="leaflet-top leaflet-left"><div class="leaflet-control-zoom leaflet-bar leaflet-control"><a class="leaflet-control-zoom-in" href="file:///C:/Users/elanm/Documents/University%20of%20Kentucky/MAP%20672/map672-module-02-elanmarae/lab-02/index.html#" title="Zoom in" role="button" aria-label="Zoom in">+</a><a class="leaflet-control-zoom-out" href="file:///C:/Users/elanm/Documents/University%20of%20Kentucky/MAP%20672/map672-module-02-elanmarae/lab-02/index.html#" title="Zoom out" role="button" aria-label="Zoom out">−</a></div></div><div class="leaflet-top leaflet-right"></div><div class="leaflet-bottom leaflet-left"></div><div class="leaflet-bottom leaflet-right"><div class="leaflet-control-attribution leaflet-control"><a href="http://leafletjs.com/" title="A JS library for interactive maps">Leaflet</a> | Map tiles by <a href="http://stamen.com/">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> — Map data © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a></div></div></div></div>
+      <!-- Start row -->
+      <div class="row">
+
+        <!-- Start left column -->
+        <div class="first-column">
+          <h2>A New Home for Scots</h2>
+          <p>Following religious upheaval in Scotland in the 1600s, the Ward family made it's way to the New World, working their way through Virginia, and eventually setlling in the Ohio/Kentucky Region.
+            Here many of the family lines would stay until present; through Independence, frontier living, and fighting on both sides in the American Civil War. Today, we branch out a little further and travel the world, but we always seem to come back to that good old home, <i>Kentucky.</i>
+            </p><ul>
+              <li>See New Maps Plus projects on GitHub: <a href="https://github.com/newmapsplus">New Maps Plus</a></li>
+              <li>Follow New Maps Plus on twitter: <a href="https://twitter.com/NewMapsPlus">@NewMapsPlus</a></li>
+            </ul>
+            <!-- End first column -->
+        </div>
+
+        <!-- Start right column -->
+        <div class="second-column">
+          <img src="Muses.jpg" alt="Vintage Photo of Ward homestead in Muses Mills, KY" class="img-fill" id="postcard">
+          <div class="caption" id="caption1">
+            Ward family farm in Muses Mills, KY.
+          </div>
+          <!-- End right column -->
+        </div>
+
+        <!-- End row column -->
+      </div>
+  </section>
+  <footer>
+    <!-- Add footer information -->
+    <hr>
+   <a href="https://newmapsplus.github.io/">
+     <img src="./KY_Towns_files/logo-2018-nmp-75px-h-gray.png" alt="University of Kentucky New Maps Plus">
+   </a>
+
+   <a href="https://uky-gis.github.io/">
+     <img src="./KY_Towns_files/logo-2018-geography-75px-h.png" alt="University of Kentucky Department of Geography">
+   </a>
+  </footer>
+
+  <!-- Add link to Leaflet JavaScript library. -->
+  <script src="./KY_Towns_files/leaflet.js.download"></script>
+  <script src="./KY_Towns_files/jquery.min.js.download"></script>
+  <!-- Starter Javascript -->
+  <script>
+    // Map options control initial location and zoom level.
+    var options = {
+      center: [38.4, -83.9],
+      zoom: 8
+    }
+
+    // Create Leaflet map with above options.
+    var map = L.map('map', options);
+
+    // Get basemap URL from Leaflet Providers
+    var basemap_url = 'http://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.{ext}'
+
+    // Get basemap attributes from Leaflet Providers
+    var basemap_attributes = {
+      attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+      subdomains: 'abcd',
+      minZoom: 1,
+      maxZoom: 16,
+      ext: 'png'
+    }
+
+    // Add tileset as a layer in our map.
+    var tiles = L.tileLayer(basemap_url, basemap_attributes).addTo(map);
+
+    // ************************************************** //
+
+    // STORING DATA AS VARIABLES IN ARRAYS
+
+    // variables referencing data values
+    var city1Name = "Lexington",
+      city1Coords = [38.0297, -84.4947],
+      city1Pop = 308428,
+      city1Capital = false,
+      city1State = "Kentucky";
+
+    var city2Name = "Muses Mills",
+      city2Coords = [38.3501, -83.5271],
+      city2Pop = 5,
+      city2Capital = false,
+      city2State = "Kentucky"
+
+    var city3Name = "Maysville",
+      city3Coords = [38.6412, -83.744],
+      city3Pop = 9011,
+      city3Capital = false,
+      city3State = "Kentucky"
+
+    // // arrays of data
+    // var cities = ["Lexington", "Muses Mills", "Maysville"],
+    //   coords = [(38.0297, -84.4947), (38.3501, -83.5271), (38.6412, -83.744)],
+    //   populations = [308428, 5, 9011],
+    //   capitals = [false, false, false],
+    //   states = ["Kentucky", "Kentucky", "Kentucky"];
+
+    // arrays of data
+    var cities = [city1Name, city2Name, city3Name],
+      coords = [city1Coords, city2Coords, city3Coords],
+      populations = [city1Pop , city2Pop , city3Pop ],
+      capitals = [city1Capital, city2Capital, city3Capital],
+      states = [city1State, city2State, city3State];
+
+    // ADDING FIRST MARKER TO MAP
+
+    // creating a string of the Popup content
+    var city1Popup = "<b>" + cities[0] + "</b>" +
+      "<br><b>population</b>: " + populations[0];
+
+      // Build all popups
+      // creating a string of the Popup content
+    var city2Popup = "<b>" + cities[1] + "</b>" +
+      "<br><b>population</b>: " + populations[1];
+
+      // creating a string of the Popup content
+    var city3Popup = "<b>" + cities[2] + "</b>" +
+      "<br><b>population</b>: " + populations[2];
+
+    // there are no capital cities
+
+    // create the Leaflet marker using the coordinates
+    L.marker(coords[0])
+      .addTo(map) // add it to the map
+      .bindPopup(city1Popup); // bind the Popup
+
+    // ADDING SECOND MARKER TO MAP
+    L.marker(coords[1])
+      .addTo(map)
+      .bindPopup(city2Popup);
+
+    L.marker(coords[2])
+      .addTo(map)
+      .bindPopup(city3Popup);
+  </script>
+
+
+
+
+</body></html>
